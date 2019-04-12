@@ -83,7 +83,7 @@ function css() {
     }))
     .pipe(gulp.dest("./css"))
     .pipe(rename({
-      suffix: "index.min"
+      suffix: ".min"
     }))
     .pipe(cleanCSS())
     .pipe(gulp.dest("./css"))
