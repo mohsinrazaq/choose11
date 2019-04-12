@@ -1,11 +1,11 @@
 {
-    "title": "Coming Soon",
-    "name": "startbootstrap-coming-soon",
+    "title": "Cricket 11",
+    "name": "",
     "version": "5.0.4",
     "scripts": {
         "start": "gulp watch"
     },
-    "description": "Coming Soon is a Bootstrap 4 coming soon page theme.",
+    "description": "Cricket fantasy Game 11",
     "keywords": [
         "css",
         "sass",
@@ -14,7 +14,7 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/coming-soon",
+    "homepage": "",
     "bugs": {
         "url": "https://github.com/BlackrockDigital/startbootstrap-coming-soon/issues",
         "email": "feedback@startbootstrap.com"
@@ -22,7 +22,7 @@
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "Mohsin Razzaq (http://mohsinrazzaq.cf/)"
     ],
     "repository": {
         "type": "git",
