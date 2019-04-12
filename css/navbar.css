@@ -4,13 +4,6 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-coming-soon/blob/master/LICENSE)
  */
 
-.masthead {
-  width: 100%;
-  height: 400px;
-  background-color: bisque;
-  background: url("/img/cricket11.png");
-}
-
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
@@ -48,14 +41,4 @@
 .topnav-right a {
   padding-right: 40px;
   padding-left: 40px;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
 }
