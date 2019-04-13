@@ -1,5 +1,16 @@
 .about-container{
-    height: 600px;
+    height: auto;
     background-color: rgb(44, 126, 126);
     padding: 100px;
+
+    button{
+        margin-top: 50px;
+        margin-left: 42%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+.card{
+    margin: 20px;
 }

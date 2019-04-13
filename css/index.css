@@ -23,9 +23,20 @@
 }
 
 .about-container {
-  height: 600px;
+  height: auto;
   background-color: #2c7e7e;
   padding: 100px;
+}
+
+.about-container button {
+  margin-top: 50px;
+  margin-left: 42%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.card {
+  margin: 20px;
 }
 
 /* Add a black background color to the top navigation */
