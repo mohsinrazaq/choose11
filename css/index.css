@@ -4,6 +4,12 @@
  * Licensed under MIT (https://github.com/BlackrockDigital//blob/master/LICENSE)
  */
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .masthead {
   width: 100%;
   max-height: 800px;
