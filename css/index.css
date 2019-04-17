@@ -55,6 +55,11 @@ body {
   overflow: hidden;
 }
 
+.topnav a h4 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 7px;
+}
+
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
@@ -73,7 +78,9 @@ body {
 /* Right-aligned section inside the top navigation */
 .topnav-right {
   float: right;
+  margin-top: 5px;
   margin-right: 50px;
+  font-weight: 600;
 }
 
 .topnav-right a {
