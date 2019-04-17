@@ -4,6 +4,31 @@
  * Licensed under MIT (https://github.com/BlackrockDigital//blob/master/LICENSE)
  */
 
+@font-face {
+  font-family: "shellia";
+  src: url("/fonts/Shellia.ttf");
+}
+
+@font-face {
+  font-family: "yulinda";
+  src: url("/fonts/Yulinda Script.ttf");
+}
+
+@font-face {
+  font-family: 'bloomer';
+  src: url("/fonts/Bloomer DEMO.otf");
+}
+
+@font-face {
+  font-family: 'giveny';
+  src: url("/fonts/Giveny.ttf");
+}
+
+@font-face {
+  font-family: 'giveny-italic';
+  src: url("/fonts/Giveny Italic.ttf");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -56,7 +81,8 @@ body {
 }
 
 .topnav a h4 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: giveny-italic;
+  font-weight: 600;
   margin-top: 25px;
   margin-left: -25px;
 }
@@ -81,10 +107,11 @@ body {
   float: right;
   margin-top: 15px;
   margin-right: 50px;
-  font-weight: 600;
 }
 
 .topnav-right a {
+  font-family: giveny-italic;
+  font-weight: 600;
   padding-right: 40px;
   padding-left: 40px;
 }
