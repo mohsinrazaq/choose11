@@ -3,4 +3,21 @@
   height: 800px;
   padding-top: 100px;
   background-color: rgb(22, 54, 54);
+
+  .video-div{
+    display: flex;
+    padding-top: 10px;
+
+    .video{
+      height: 600px;
+      width: 60%;
+      background-color: beige;
+    }
+    .video-info{
+      height: 600px;
+      width: 40%;
+      background-color: aquamarine;
+    }
+  }
+  
 }

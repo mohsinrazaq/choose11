@@ -143,3 +143,22 @@ body {
   padding-top: 100px;
   background-color: #163636;
 }
+
+.play-container .video-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+}
+
+.play-container .video-div .video {
+  height: 600px;
+  width: 60%;
+  background-color: beige;
+}
+
+.play-container .video-div .video-info {
+  height: 600px;
+  width: 40%;
+  background-color: aquamarine;
+}
