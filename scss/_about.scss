@@ -1,6 +1,6 @@
 .about-container{
     height: auto;
-    background-color: rgb(44, 126, 126);
+    background-color: rgb(49, 168, 168);
     padding: 100px;
 
     button{
@@ -13,4 +13,13 @@
 
 .card{
     margin: 20px;
+    width: 16rem;
+    
+    .card-img-top{
+        height: 200px;
+    }
 }
+
+
+
+
