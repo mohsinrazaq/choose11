@@ -1,0 +1,192 @@
+//code to check if there is user id present or not , in case user id is not present this page will not be show or opened
+<?php
+include("db.php");
+if($_SESSION['uid'] == '' )
+{
+	header("location:mainpage.php");
+}
+?>
+
+//update data 
+
+<?php
+	$user_id = $_GET['u_id'];
+	if(isset($_POST['register'] ) ) 
+	{
+	$id = $_POST['u_id'] ; 
+	$name = $_POST['u_name'] ; 
+	$fathername = $_POST['u_fathername'] ; 
+	$degree = $_POST['degree_title'] ;
+	$degree_session = $_POST['session'] ; 
+	$shift = $_POST['shift'] ; 
+	$section = $_POST['section'] ; 
+	
+	$q2 = "SELECT * FROM students_data WHERE registration_no = '$id' ";
+	
+	$res1 = mysqli_query($con,$q2);
+	$checkrows=mysqli_num_rows($res1);	
+	$check = mysqli_fetch_array($res1);
+	if($checkrows > 0)
+	{
+		$t1 = "Registration No Already Assigned !"; 
+			echo "<h3>"."<span class='sp10'>".$t1."</span>"."</h3>";
+	}
+	else
+	{
+	 
+	$q = "UPDATE students_data SET registration_no = '$id' , Student_name = '$name' , 	
+	      father_name ='$fathername' , degree = '$degree' , sesion = '$degree_session' , 
+		Shift = '$shift' , section = '$section' WHERE registration_no = '$user_id'";
+	$res = mysqli_query($con,$q);
+	header("location:admin_update_record_page.php");	
+
+
+//to view specific data from database 
+
+<?php
+if(isset($_POST['register'] ) ) 
+{
+ 	$degree = $_POST['degree'] ; 
+	$session = $_POST['sesion'] ; 
+	$section = $_POST['section'] ; 
+	$shift = $_POST['shift'] ; 
+	 
+$q = "SELECT * FROM students_data WHERE Shift = '$shift' AND sesion = '$session' AND section = '$section' AND degree = '$degree'";
+	$res = mysqli_query($con,$q);
+}
+?>
+
+
+
+//read data from database
+
+<?php
+if(isset($_POST['register'] ) ) 
+	{
+	$reg_no = $_POST['u_reg_no'] ;
+	$password = $_POST['u_pass'] ; 
+	error_reporting(0);
+	include("db.php");
+		$query	=	"SELECT * FROM students_data WHERE registration_no = '$reg_no' AND student_password = '$password'";
+		$res	=	mysqli_query($con,$query);
+		$row	=	mysqli_fetch_array($res);
+		if($row != "")
+			{
+				$_SESSION['uid'] = $row['registration_no'] ;
+				$_SESSION['u_name'] = $row['student_name'] ;
+			header("location:student_page.php");
+			}
+		else
+			{
+			echo "invalid username or password.";	
+			}
+	}
+?>
+		}
+	}
+?>
+
+
+//update user password in database
+
+<?php
+		$uid = $_GET['uid'];
+	if(isset($_POST['register'] ) ) 
+	{
+		$p1 =  $_POST['u_n_pass'];
+		$p2 = $_POST['u_c_pass'];
+		if($p1 == $p2)
+	{
+	$q = "UPDATE students_data SET student_password = '$p1' WHERE registration_no = '$uid' ";
+	mysqli_query($con,$q);
+	header("location:student_page.php");
+	}
+	else
+	{
+		
+		$t1 = "Passwords Does Not Match !"; 
+			echo "<h3>"."<span class='sp4'>".$t1."</span>"."</h3>";
+	}
+	}
+	?>
+
+
+//inserting data in database 
+if(isset($_POST['register'] ) ) 
+{
+	$id = $_POST['t_id'] ; 
+	$name = $_POST['u_name'] ; 
+	$password = $_POST['u_pass'] ;
+	
+	$q1 = "SELECT * FROM teachers_data WHERE teacher_id = '$id' AND teacher_name = '$name' ";	
+	$res1 = mysqli_query($con,$q1);
+	if(mysqli_num_rows($res1)==1)
+	{
+		$t1 = "ID Already Assigned Or Teacher Already Exist !"; 
+			echo "<h3>"."<span class='sp4'>".$t1."</span>"."</h3>";
+	}
+	else
+	{
+	$q = "INSERT INTO teachers_data(teacher_id,teacher_name,password) VALUES ('$id','$name','$password') ";
+	$res = mysqli_query($con,$q);
+	$t3 = "Teacher Added"; 
+		echo "<h3>"."<span class='sp5'>".$t3."</span>"."</h3>";
+	}
+}
+?>
+
+
+//adding new user in database 
+<?php
+if(isset($_POST['register'] ) ) 
+{
+	$id = $_POST['u_id'] ; 
+	$name = $_POST['u_name'] ; 
+	$fathername = $_POST['u_fathername'] ;
+	$user_pass = $_POST['u_pass'];
+	$degree = $_POST['degree_title'] ;
+	$degree_session = $_POST['session'] ; 
+	$shift = $_POST['shift'] ; 
+	$section = $_POST['section'] ; 
+	
+	$q2 = "SELECT * FROM students_data WHERE registration_no = '$id' ";
+	
+	$res1 = mysqli_query($con,$q2);
+	$checkrows=mysqli_num_rows($res1);	
+	$check = mysqli_fetch_array($res1);
+	if($checkrows > 0 )
+	{
+		$t1 = "ID Already Assigned Or Student Already Exist !"; 
+			echo "<h3>"."<span class='sp4'>".$t1."</span>"."</h3>";
+	}
+	else
+	{
+	 
+$q = "INSERT INTO students_data(registration_no,Student_name,father_name,student_password,degree,sesion,shift,section) VALUES 
+		('$id','$name','$fathername','$user_pass','$degree','$degree_session','$shift','$section') ";
+	$res = mysqli_query($con,$q);	
+	$t3 = "Student Added"; 
+		echo "<h3>"."<span class='sp5'>".$t3."</span>"."</h3>";
+	}
+}
+?>
+
+
+//deleting data from database 
+
+<?php 
+	//logic for deleting teacher data 
+	$tid = $_GET['tid'];
+	$delete_q = ("DELETE FROM teachers_data WHERE teacher_id = $tid");
+	$delte_query = mysqli_query($con,$delete_q);
+	
+?>
+
+//deleting data 
+<?php
+	error_reporting(0);
+	$c_id = $_GET['c_id'];
+	$query = "DELETE  FROM SUBJECTS WHERE subject_id = '$c_id' ";
+	$dq = mysqli_query($con,$query);
+?>
+<?php
