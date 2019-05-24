@@ -8,6 +8,7 @@
 }
 
 .card{
+    justify-content: flex-start;
     height: 300px;
     width: 200px;
     margin: 20px;
