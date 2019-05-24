@@ -1,0 +1,12 @@
+.upcoming-matches h3 {
+    text-align:center;
+}
+
+.card-parent{
+    display: flex;
+    
+}
+
+.card{
+    margin: 20px;
+}
