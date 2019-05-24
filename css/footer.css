@@ -1,4 +1,4 @@
-.footer { 
+footer { 
     left: 0;
     bottom: 0;
     
@@ -6,7 +6,7 @@
     background-color: #282828;
     color: white;
     text-align: center;
-    height: 60px;
+    height: 50px;
 
     h3{
         padding: 10px;  
