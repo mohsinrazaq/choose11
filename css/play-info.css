@@ -1,5 +1,39 @@
 .play-info{
-    height: 500px;
-    background-color: bisque;
     width: 100%;
+    height: 700px;
+    padding-top: 50px;
+
 }
+.play-info h2{
+    text-align: center;
+}
+.video-div{
+    display: flex;
+    padding-top: 10px;  
+}
+.video{
+    height: 550px;
+    width: 60%;
+}
+.video video{
+    height: 320px;
+    width: 600px;
+    margin-top: 50px;
+}
+      
+.video-info{
+    margin-top:50px;
+    height: 400px;
+    width: 60%;
+}
+  
+.video-info   h5{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.video-info   P{
+    margin-left: 100px;
+}
+      
+    
+  

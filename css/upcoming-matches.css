@@ -4,6 +4,7 @@
 
 .card-parent{
     display: flex;
+    flex-wrap: wrap;
     
 }
 
@@ -11,5 +12,5 @@
     justify-content: flex-start;
     height: 300px;
     width: 200px;
-    margin: 20px;
+    margin: 15px;
 }
