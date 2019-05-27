@@ -17,8 +17,10 @@ if(isset($_POST['register'])){
    $ugender = $_POST['gender'];
    $uaddress =$_POST['address'];
    $uphone =  $_POST['phone'];
-$InsertQuerry = "INSERT INTO users_data (user_name,user_email,user_cnic,user_gender,user_address,user_phone_no) 
-                VALUES ()";
+   $InsertQuerry = "INSERT INTO users_data (user_name,user_email,user_cnic,user_gender,user_address,user_phone_no) 
+                    VALUES('$uname','$uemail','$ucnic','$ugender','$uaddress','$uphone')";
+        $result = mysqli_query ($con,$InsertQuerry);  
+        echo "Data Entered";
 }
 ?>
 <body>
@@ -82,7 +84,7 @@ $InsertQuerry = "INSERT INTO users_data (user_name,user_email,user_cnic,user_gen
                   </div>
 
                   <div class="form-item">
-                    <span id="submit" name="register" class="submit">Register</span>
+                    <input type="submit" id="submit" name="register" class="submit" value="Insert"> 
                   </div>
 
                 </form>
