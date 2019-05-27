@@ -17,6 +17,8 @@ if(isset($_POST['register'])){
    $ugender = $_POST['gender'];
    $uaddress =$_POST['address'];
    $uphone =  $_POST['phone'];
+$InsertQuerry = "INSERT INTO users_data (user_name,user_email,user_cnic,user_gender,user_address,user_phone_no) 
+                VALUES ()";
 }
 ?>
 <body>
