@@ -11,12 +11,12 @@
 <?php
 include("db.php");
 if(isset($_POST['register'])){
-            $_POST['username'];
-            $_POST['useremail'];
-            $_POST['cnic'];
-            $_POST['gender'];
-            $_POST['address'];
-            $_POST['phone'];
+   $uname =   $_POST['username'];
+   $uemail =  $_POST['useremail'];
+   $ucnic =   $_POST['cnic'];
+   $ugender = $_POST['gender'];
+   $uaddress =$_POST['address'];
+   $uphone =  $_POST['phone'];
 }
 ?>
 <body>
