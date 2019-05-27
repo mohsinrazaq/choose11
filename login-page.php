@@ -8,7 +8,12 @@
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
   <link rel="stylesheet" href="css/login-style.css">
 </head>
-
+<?php
+if(isset($_POST['submit'])){
+$_POST['email'];
+$_POST['password'];
+}
+?>
 <body>
 <div class='box'>
   <div class='box-form'>
