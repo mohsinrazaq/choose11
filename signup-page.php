@@ -10,6 +10,8 @@
 </head>
 <?php
 include("db.php");
+$readquery = "SELECT * FROM users_data";
+$res = mysqli_query($con,$readquery);
 if(isset($_POST['register'])){
    $uname =   $_POST['username'];
    $uemail =  $_POST['useremail'];
