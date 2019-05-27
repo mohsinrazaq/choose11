@@ -10,8 +10,8 @@
 </head>
 <?php
 if(isset($_POST['submit'])){
-$_POST['email'];
-$_POST['password'];
+$userEmail = $_POST['email'];
+$userPassword = $_POST['password'];
 }
 ?>
 <body>
