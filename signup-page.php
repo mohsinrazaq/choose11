@@ -92,7 +92,7 @@ if(isset($_POST['register'])){
                 </form>
               </main>
               <footer>
-                <p>Already have an account? <a href="login-page.html">Login here</a></p>
+                <p>Already have an account? <a href="login-page.php">Login here</a></p>
               </footer>
               <i class="wave"></i>
             </section>
