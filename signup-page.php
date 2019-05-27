@@ -5,27 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- form css -->
     <link rel="stylesheet" href="css/signup-form.css">
 </head>
+<?php
+include("db.php");
+?>
 <body>
+
+    <!-- registration form starts here -->
     <div class="form-wrapper">
         <div class="row">
             <section class="section">
               <header>
-                <h3>Register</h3>
+                <h3>CHOOSE11 Registration </h3>
                 <h4>Please fill your information bellow</h4>
               </header>
-              <main>
-                <form>
+              <main class="form-wrapper">
+                <form method="POST" name="registration-form">
+
                   <div class="form-item box-item">
-                    <input type="text" name="name" placeholder="Name" data-required>
+                    <input type="text" name="username" placeholder="Name" data-required>
                     <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                   </div>
+
                   <div class="form-item box-item">
-                    <input type="email" name="email" placeholder="Email" data-email data-required>
+                    <input type="email" name="useremail" placeholder="Email" data-email data-required>
                     <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                     <small class="errorEmail"><i class="fa fa-asterisk" aria-hidden="true"></i> email is not valid</small>
                   </div>
+
+                  <div class="form-item box-item">
+                    <input type="text" name="cnic" placeholder="CNIC No" data-required maxlength="13">
+                    <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                  </div>
+                  
                   <div class="form-item box-item">
                     <div class="form-item-triple">
                       <div class="radio-label">
@@ -42,47 +56,25 @@
                     </div>
                     <small class="errorOnce"><i class="fa fa-asterisk" aria-hidden="true"></i> choose at least one</small>
                   </div>
-                  <div class="form-item box-item">
-                    <div class="form-item-triple">
-                      <div class="radio-label">
-                        <label class="label">Type</label>
-                      </div>
-                      <div class="form-item">
-                        <input id="sponsored" type="radio" name="gender2" value="sponsored" data-once>
-                        <label for="sponsored">sponsored</label>
-                      </div>
-                      <div class="form-item">
-                        <input id="paid" type="radio" name="gender2" value="paid" data-once>
-                        <label for="paid">paid</label>
-                      </div>
-                    </div>
-                    <small class="errorOnce"><i class="fa fa-asterisk" aria-hidden="true"></i> choose at least one</small>
-                  </div>
+                  
+              
                   <div class="form-item box-item">
                     <input type="text" name="address" placeholder="Address" data-required>
                     <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                   </div>
-                  <div class="form-item-double box-item">
-                    <div class="form-item ">
-                      <input type="text" name="strNumber" placeholder="Str Number" data-required data-number>
-                      <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
-                      <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
-                    </div>
-                    <div class="form-item">
-                      <input type="text" name="zCode" placeholder="Zip Code" data-required data-number>
-                      <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
-                      <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
-                    </div>
-                  </div>
+             
                   <div class="form-item box-item">
-                    <input type="text" name="phone" placeholder="Phone" data-required data-number data-count="10">
+                    <input type="text" name="phone" placeholder="Phone No" data-required data-number data-count="14"
+                    maxlength="14">
                     <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                     <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
-                    <small class="errorChar"><i class="fa fa-asterisk" aria-hidden="true"></i> must be 10 digits</small>
+                    <small class="errorChar"><i class="fa fa-asterisk" aria-hidden="true"></i> must be 12 digits</small>
                   </div>
+
                   <div class="form-item">
-                    <span id="submit" class="submit">Submit</span>
+                    <span id="submit" name="submit" class="submit">Register</span>
                   </div>
+
                 </form>
               </main>
               <footer>
@@ -92,6 +84,8 @@
             </section>
           </div>
     </div>
+    <!-- registration form ends here -->
+
 </body>
 <script src="js/signup-form-sc.js"></script>
 </html>
