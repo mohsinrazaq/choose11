@@ -10,8 +10,13 @@
 </head>
 <?php
 include("db.php");
-if(isset($_POST[''])){
-  
+if(isset($_POST['register'])){
+            $_POST['username'];
+            $_POST['useremail'];
+            $_POST['cnic'];
+            $_POST['gender'];
+            $_POST['address'];
+            $_POST['phone'];
 }
 ?>
 <body>
@@ -75,7 +80,7 @@ if(isset($_POST[''])){
                   </div>
 
                   <div class="form-item">
-                    <span id="submit" name="submit" class="submit">Register</span>
+                    <span id="submit" name="register" class="submit">Register</span>
                   </div>
 
                 </form>
