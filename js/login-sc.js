@@ -29,7 +29,7 @@ $(document).ready(function() {
     });
  
   openLoginInfo();
-  setTimeout(closeLoginInfo, 1000);
+  setTimeout(closeLoginInfo, 6000);
 });
 
 function openLoginInfo() {
