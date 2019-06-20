@@ -12,7 +12,24 @@
 if(isset($_POST['submit'])){
 $userEmail = $_POST['email'];
 $userPassword = $_POST['password'];
-
+include("db.php")
+$SearchQuery = "SELECT * FROM users_data WHERE user_email ='$userEmail' AND user_password = '$userPassword'";
+$res1 = mysqli_query($con,$SearchQuery); 
+$row = mysqli_fetch_array($res1);
+if($row!= ""){
+  $_SESSION['userId'] = $row['user_id'];
+  $_SESSION['username'] = $row['user_name'];
+  $_SESSION['Email'] = $row['user_email'];
+  $_SESSION['userPassword'] = $row['user_password'];
+  $_SESSION['userCnic'] =   $row['user_cnic'];
+  $_SESSION['userGender'] =   $row['user_gender'];
+  $_SESSION['userAddress'] =   $row['user_address'];
+  $_SESSION[userPhoneNo] = $row['user_phone_no'];
+  header("location:user-after-login-page.html");
+}
+else{
+  echo"Invalid username or password.";
+  }
 }
 ?>
 <body>
@@ -43,7 +60,6 @@ $userPassword = $_POST['password'];
         <label class='checkbox'>
           <input type='checkbox' value='TRUE' title='Keep me Signed in' /> Keep me Signed in
         </label>
-
 
           <input type='submit' name="submit" id='do_login' value='GET STARTED' title='Get Started' onClick="location.href='user-after-login-page.html'">
       </div>
