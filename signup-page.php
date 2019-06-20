@@ -16,6 +16,7 @@ if(isset($_POST['register'])){
    $uname =   $_POST['username'];
    $uemail =  $_POST['useremail'];
    $ucnic =   $_POST['cnic'];
+              $_POST['password'];
    $ugender = $_POST['gender'];
    $uaddress =$_POST['address'];
    $uphone =  $_POST['phone'];
@@ -50,7 +51,12 @@ if(isset($_POST['register'])){
                   </div>
 
                   <div class="form-item box-item">
-                    <input type="text" name="cnic" placeholder="CNIC No" data-required maxlength="13">
+                    <input type="text" name="cnic" placeholder="CNIC No" data-required maxlength="20">
+                    <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                  </div>
+
+                  <div class="form-item box-item">
+                    <input type="text" name="password" placeholder="Password" data-required maxlength="30">
                     <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                   </div>
                   
