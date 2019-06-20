@@ -12,7 +12,7 @@
 if(isset($_POST['submit'])){
 $userEmail = $_POST['email'];
 $userPassword = $_POST['password'];
-include("db.php")
+include("db.php");
 $SearchQuery = "SELECT * FROM users_data WHERE user_email ='$userEmail' AND user_password = '$userPassword'";
 $res1 = mysqli_query($con,$SearchQuery); 
 $row = mysqli_fetch_array($res1);
