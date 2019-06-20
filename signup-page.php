@@ -86,7 +86,7 @@ if(isset($_POST['register'])){
                   </div>
 
                   <div class="form-item">
-                    <input type="submit" id="submit" name="register" class="submit" value="Insert"> 
+                    <input type="submit" id="submit" name="register" class="submit" value="Submit"> 
                   </div>
 
                 </form>
