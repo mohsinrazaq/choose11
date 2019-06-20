@@ -16,12 +16,12 @@ if(isset($_POST['register'])){
    $uname =   $_POST['username'];
    $uemail =  $_POST['useremail'];
    $ucnic =   $_POST['cnic'];
-              $_POST['password'];
+   $upassword =$_POST['password'];
    $ugender = $_POST['gender'];
    $uaddress =$_POST['address'];
    $uphone =  $_POST['phone'];
-   $InsertQuerry = "INSERT INTO users_data (user_name,user_email,user_cnic,user_gender,user_address,user_phone_no) 
-                    VALUES('$uname','$uemail','$ucnic','$ugender','$uaddress','$uphone')";
+   $InsertQuerry = "INSERT INTO users_data (user_name,user_email,user_cnic,user_password,user_gender,user_address,user_phone_no) 
+                    VALUES('$uname','$uemail','$ucnic','$upassword','$ugender','$uaddress','$uphone')";
         $result = mysqli_query ($con,$InsertQuerry);  
         echo "Data Entered";
 }
