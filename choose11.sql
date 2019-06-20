@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 27, 2019 at 06:35 PM
+-- Generation Time: Jun 20, 2019 at 10:20 AM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -32,11 +32,19 @@ CREATE TABLE `users_data` (
   `user_id` int(11) NOT NULL,
   `user_name` varchar(30) NOT NULL,
   `user_email` varchar(30) NOT NULL,
-  `user_cnic` int(15) NOT NULL,
+  `user_password` varchar(30) NOT NULL,
+  `user_cnic` varchar(20) NOT NULL,
   `user_gender` varchar(10) NOT NULL,
   `user_address` varchar(50) NOT NULL,
-  `user_phone_no` int(15) NOT NULL
+  `user_phone_no` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users_data`
+--
+
+INSERT INTO `users_data` (`user_id`, `user_name`, `user_email`, `user_password`, `user_cnic`, `user_gender`, `user_address`, `user_phone_no`) VALUES
+(1, 'Mohsin Razzaq', 'mohsinrazzaq25@gmail.com', 'abc123', '31102-4856729-9', 'Male', 'flexworld opposite fatima plaza chishtian', '0323-4974645');
 
 --
 -- Indexes for dumped tables
@@ -56,7 +64,7 @@ ALTER TABLE `users_data`
 -- AUTO_INCREMENT for table `users_data`
 --
 ALTER TABLE `users_data`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
