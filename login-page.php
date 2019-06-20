@@ -12,6 +12,7 @@
 if(isset($_POST['submit'])){
 $userEmail = $_POST['email'];
 $userPassword = $_POST['password'];
+
 }
 ?>
 <body>
