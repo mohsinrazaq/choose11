@@ -4,19 +4,19 @@
 }
 
 .left{
-height: 700px;
+height: 730px;
 width: 35%;    
 background-color:lightsalmon;
 }
 
 .inner-left{
-    height: 200px;
+    height: 250px;
     width: 100%;
     background-color: aqua;
 }
 
 .right{
-    height: 700px;
+    height: 730px;
     width: 65%;    
     background-color:lightgoldenrodyellow;
 }
