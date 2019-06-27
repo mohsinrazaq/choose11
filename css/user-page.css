@@ -1,14 +1,22 @@
 .inner-wrapper{
     display: flex;
+    overflow:hiden;
 }
 
-.left, .center{
+.left{
 height: 700px;
-width: 600px;    
-background-color:red;
+width: 35%;    
+background-color:lightsalmon;
 }
-.center{
+
+.inner-left{
+    height: 200px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.right{
     height: 700px;
-    width: 600px;    
+    width: 65%;    
     background-color:lightgoldenrodyellow;
-    }
+}

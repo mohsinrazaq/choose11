@@ -13,7 +13,7 @@
     <div class="wrapper">
         <!-- header started here -->
         <header>
-            <a href="#" id="logo"></a>
+            <a href="user-after-login-page.php" id="logo"></a>
             <nav>
                 <a href="#" id="menu-icon"></a>
                 <ul>
@@ -29,12 +29,12 @@
 
         <div class="inner-wrapper">
             <div class="left">
-
-            </div>
-            <div class="center">
-
+                <div class="inner-left">
+                    
+                </div>
             </div>
             <div class="right">
+
 
             </div>
         </div>
