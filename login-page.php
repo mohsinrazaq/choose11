@@ -25,7 +25,7 @@ if($row!= ""){
   $_SESSION['userGender'] =   $row['user_gender'];
   $_SESSION['userAddress'] =   $row['user_address'];
   $_SESSION[userPhoneNo] = $row['user_phone_no'];
-  header("location:user-after-login-page.html");
+  header("location:user-after-login-page.php");
 }
 else{
   echo"Invalid username or password.";
