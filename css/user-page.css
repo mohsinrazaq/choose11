@@ -1,0 +1,14 @@
+.inner-wrapper{
+    display: flex;
+}
+
+.left, .center{
+height: 700px;
+width: 600px;    
+background-color:red;
+}
+.center{
+    height: 700px;
+    width: 600px;    
+    background-color:lightgoldenrodyellow;
+    }
