@@ -1,6 +1,6 @@
-body{
+/* body{
     overflow-y: hidden;
-}
+} */
 
 .inner-wrapper{
     display: flex;
@@ -9,11 +9,11 @@ body{
 
 .left{
 height: 730px;
-width: 35%;    
+width: 65%;    
 background-color:lightsalmon;
 }
 
-.inner-left{
+.inner-right{
     height: 250px;
     width: 100%;
     background-color: aqua;
@@ -21,6 +21,17 @@ background-color:lightsalmon;
 
 .right{
     height: 730px;
-    width: 65%;    
+    width: 35%;    
     background-color:lightgoldenrodyellow;
+}
+
+.inner-left-top{
+    margin-top:90px; 
+    height: 100px;
+    width:100%;
+    background-color: rgb(83, 245, 151);
+}
+
+.inner-left-top nav{
+    float: left;
 }
