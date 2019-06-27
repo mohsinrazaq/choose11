@@ -7,5 +7,10 @@ body{
     width: 40%;
     height:730px;
     background-color: blanchedalmond;
-    overflow: hidden;
+}
+
+.left-top{
+    height: 80px;
+    width: 100%;
+    background-color:#C51D23;
 }

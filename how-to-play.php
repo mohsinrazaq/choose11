@@ -10,7 +10,9 @@
 <body>
     <div class="wrapper">
         <div class="left">
-
+            <div class="left-top">
+                
+            </div>
         </div>
         <div class="right">
 
