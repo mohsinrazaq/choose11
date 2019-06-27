@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/navbarstyles.css">
     <link rel="stylesheet" href="css/user-page.css">
-    <link rel="stylesheet" href="css/footer.css">
+ 
     <title>CHOOSE11 - User Page</title>
 </head>
 <body>
@@ -49,12 +49,6 @@
 
             </div>
         </div> 
-
-        <!-- footer started -->
-       <footer>
-          <h3 class="footer">&copy;2019 choose11. All rights reserved</h3> 
-       </footer>
-       <!-- footer ended -->  
     </div>
 </body>
 </html>
