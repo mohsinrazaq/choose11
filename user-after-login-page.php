@@ -28,6 +28,7 @@
         <!-- header ended here -->
 
         <div class="inner-wrapper">
+
             <div class="left">
               <div class="inner-left-top">
               <nav>
@@ -44,9 +45,9 @@
             </div>
             <div class="right">
                 <div class="inner-right">
-                    
+                    <p class="innner-text">CRICKET</p>
+                    <p class="upcoming-matches">Upcoming Matches</p>
                 </div>
-
             </div>
         </div> 
     </div>

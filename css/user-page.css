@@ -23,6 +23,7 @@ background-color:lightsalmon;
     height: 730px;
     width: 35%;    
     background-color:lightgoldenrodyellow;
+    margin-top: 90px;
 }
 
 .inner-left-top{
@@ -34,4 +35,15 @@ background-color:lightsalmon;
 
 .inner-left-top nav{
     float: left;
+}
+
+.innner-text{
+    padding: 30px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.upcoming-matches{
+    padding: 20px;
+    text-align: left;
 }
