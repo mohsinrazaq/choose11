@@ -7,7 +7,7 @@ body{
 }
 .left{
     width: 40%;
-    height:730px;
+    height:auto;
     background-color: rgb(255, 255, 255);
 }
 
@@ -54,7 +54,7 @@ body{
   .active:after {
     content: "\2212";
   }
-  
+    
   .content {
     padding: 0 18px;
     max-height: 0;
@@ -66,9 +66,11 @@ body{
   .content p {
     color: black;
 
+
   }
 
   .collapsible-menu{
       margin-top: 32px;
       overflow-y: auto;
+
 }
