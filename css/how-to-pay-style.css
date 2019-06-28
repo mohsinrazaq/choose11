@@ -2,13 +2,17 @@ body{
     margin: 0;
     padding:0;
     overflow: hidden;
+    height: 100%;
     font-size: 0.75rem;
     line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .left{
-    width: 40%;
-    height:auto;
-    background-color: rgb(255, 255, 255);
+  overflow-y: scroll;
+  max-height: 100%;
+  position: fixed;
+  width: 40%;
+  background-color: rgb(255, 255, 255);
 }
 
 .left-top{
@@ -25,6 +29,12 @@ body{
     color: white;
     font-weight: bold;
     font-size: 24px;
+}
+
+.collapsible-menu{
+  height: 100%;
+  width: 100%;
+  overflow: visible;
 }
 
 .collapsible {
@@ -64,13 +74,7 @@ body{
   }
  
   .content p {
-    color: black;
+      color: black;
+    }
 
-
-  }
-
-  .collapsible-menu{
-      margin-top: 32px;
-      overflow-y: auto;
-
-}
+ 
