@@ -59,6 +59,9 @@ body{
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #E8E8E8;
+  }
+ 
+  .content p {
     color: black;
   }
 
