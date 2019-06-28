@@ -25,10 +25,15 @@ body{
     margin: 0;
     padding: 0;
     text-align: center;
-    padding-top: 20px;
+    margin-top: -43px;
     color: white;
     font-weight: bold;
     font-size: 24px;
+}
+
+.left-top a img{
+  padding: 10px;
+
 }
 
 .collapsible-menu{

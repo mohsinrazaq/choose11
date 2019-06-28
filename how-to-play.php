@@ -11,6 +11,7 @@
     <div class="main">
         <div class="left">
             <div class="left-top">
+               <a href=""><img src="images/icons/home-icon.png" alt=""></a>
                 <p>How To Play</p> 
             </div>      
             <div class="collapsible-menu">
@@ -18,27 +19,27 @@
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-                <button class="collapsible">Introduction</button>
+                <button class="collapsible">Create Your Team</button>
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div> 
-                <button class="collapsible">Introduction</button>
+                <button class="collapsible">Managing Your Team</button>
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div> 
-                <button class="collapsible">Introduction</button>
+                <button class="collapsible">Fantasy Cricket Points System</button>
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div> 
-                <button class="collapsible">Introduction</button>
+                <button class="collapsible">Account Balance</button>
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div> 
-                <button class="collapsible">Introduction</button>
+                <button class="collapsible">FAQs</button>
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div> 
-                <button class="collapsible">Introduction</button>
+                <button class="collapsible">Dream11 Season Challenge</button>
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>                
