@@ -52,7 +52,7 @@ if(isset($_POST['register'])){
                   </div>
 
                   <div class="form-item box-item">
-                    <input type="text" name="cnic" placeholder="CNIC No" data-required maxlength="20" required>
+                    <input type="text" name="cnic" placeholder="CNIC No eg. 00000-0000000-0" data-required maxlength="20" required>
                     <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                   </div>
 
@@ -85,7 +85,7 @@ if(isset($_POST['register'])){
                   </div>
              
                   <div class="form-item box-item">
-                    <input type="text" name="phone" placeholder="Phone No" data-required data-number data-count="14"
+                    <input type="text" name="phone" placeholder="Phone No 0333-6334444  " data-required data-number data-count="14"
                     maxlength="14" required>
                     <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                     <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
@@ -93,7 +93,7 @@ if(isset($_POST['register'])){
                   </div>
 
                   <div class="form-item">
-                    <input type="submit" id="submit" name="register" class="submit" value="Submit"> 
+                    <input type="submit" id="submit" name="register" class="submit" value="Register"> 
                   </div>
 
                 </form>
