@@ -16,7 +16,7 @@ include("db.php");
 $SearchQuery = "SELECT * FROM users_data WHERE user_email ='$userEmail' AND user_password = '$userPassword'";
 $res1 = mysqli_query($con,$SearchQuery); 
 $row = mysqli_fetch_array($res1);
-if($row!= ""){
+if($row ['user_type'] == 'admin'){
   $_SESSION['userId'] = $row['user_id'];
   $_SESSION['username'] = $row['user_name'];
   $_SESSION['Email'] = $row['user_email'];
@@ -24,11 +24,11 @@ if($row!= ""){
   $_SESSION['userCnic'] =   $row['user_cnic'];
   $_SESSION['userGender'] =   $row['user_gender'];
   $_SESSION['userAddress'] =   $row['user_address'];
-  $_SESSION[userPhoneNo] = $row['user_phone_no'];
-  header("location:user-after-login-page.php");
+  $_SESSION['userPhoneNo'] = $row['user_phone_no'];
+  header("location:admin_after_login_page.php");
 }
 else{
-  echo"Invalid username or password.";
+  header("location:user_after_login_page.php");
   }
 }
 ?>
