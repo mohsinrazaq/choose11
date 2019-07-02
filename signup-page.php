@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>User Signup Form</title>
     <!-- form css -->
     <link rel="stylesheet" href="css/signup-form.css">
 </head>
@@ -12,6 +12,7 @@
 include("db.php");
 $readquery = "SELECT * FROM users_data";
 $res = mysqli_query($con,$readquery);
+
 if(isset($_POST['register'])){
    $uname =   $_POST['username'];
    $uemail =  $_POST['useremail'];
@@ -40,34 +41,34 @@ if(isset($_POST['register'])){
                 <form method="POST" name="registration-form">
 
                   <div class="form-item box-item">
-                    <input type="text" name="username" placeholder="Name" data-required>
+                    <input type="text" name="username" placeholder="Name" data-required required> 
                     <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                   </div>
 
                   <div class="form-item box-item">
-                    <input type="email" name="useremail" placeholder="Email" data-email data-required>
+                    <input type="email" name="useremail" placeholder="Email" data-email data-required required>
                     <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                     <small class="errorEmail"><i class="fa fa-asterisk" aria-hidden="true"></i> email is not valid</small>
                   </div>
 
                   <div class="form-item box-item">
-                    <input type="text" name="cnic" placeholder="CNIC No" data-required maxlength="20">
+                    <input type="text" name="cnic" placeholder="CNIC No" data-required maxlength="20" required>
                     <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                   </div>
 
                   <div class="form-item box-item">
-                    <input type="text" name="password" placeholder="Password" data-required maxlength="30">
+                    <input type="text" name="password" placeholder="Password" data-required maxlength="30" required>
                     <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                   </div>
                   
                   <div class="form-item box-item">
                     <div class="form-item-triple">
                       <div class="radio-label">
-                        <label class="label">Gender</label>
+                        <label class="label" required>Gender</label>
                       </div>
                       <div class="form-item">
-                        <input id="Male" type="radio" name="gender" value="Male" data-once>
-                        <label for="Male">Male</label>
+                        <input id="Male" type="radio" name="gender" value="Male" data-once checked="checked">
+                        <label for="Male" >Male</label>
                       </div>
                       <div class="form-item">
                         <input id="Female" type="radio" name="gender" value="Female" data-once>
@@ -79,16 +80,16 @@ if(isset($_POST['register'])){
                   
               
                   <div class="form-item box-item">
-                    <input type="text" name="address" placeholder="Address" data-required>
+                    <input type="text" name="address" placeholder="Address" data-required required>
                     <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                   </div>
              
                   <div class="form-item box-item">
                     <input type="text" name="phone" placeholder="Phone No" data-required data-number data-count="14"
-                    maxlength="14">
+                    maxlength="14" required>
                     <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                     <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
-                    <small class="errorChar"><i class="fa fa-asterisk" aria-hidden="true"></i> must be 12 digits</small>
+                    <small class="errorChar"><i class="fa fa-asterisk" aria-hidden="true"></i> must be 14 digits</small>
                   </div>
 
                   <div class="form-item">
