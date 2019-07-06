@@ -85,7 +85,7 @@ if(isset($_POST['register'])){
                   </div>
              
                   <div class="form-item box-item">
-                    <input type="text" name="phone" placeholder="Phone No 0333-6334444  " data-required data-number data-count="14"
+                    <input type="text" name="phone" placeholder="Phone No 0000-0000000  " data-required data-number data-count="14"
                     maxlength="14" required>
                     <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                     <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>

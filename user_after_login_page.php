@@ -1,3 +1,10 @@
+<?php
+include("db.php");
+if($_SESSION['userId'] == '' )
+{
+	header("location:index.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +20,7 @@
     <div class="wrapper">
         <!-- header started here -->
         <header>
-            <a href="user-after-login-page.php" id="logo"></a>
+            <a href="user_after_login_page.php" id="logo"></a>
             <!-- <nav>
                 <a href="#" id="menu-icon"></a>
                 <ul>

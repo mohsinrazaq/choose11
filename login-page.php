@@ -28,6 +28,14 @@ if($row ['user_type'] == 'admin'){
   header("location:admin_after_login_page.php");
 }
 else{
+  $_SESSION['userId'] = $row['user_id'];
+  $_SESSION['username'] = $row['user_name'];
+  $_SESSION['Email'] = $row['user_email'];
+  $_SESSION['userPassword'] = $row['user_password'];
+  $_SESSION['userCnic'] =   $row['user_cnic'];
+  $_SESSION['userGender'] =   $row['user_gender'];
+  $_SESSION['userAddress'] =   $row['user_address'];
+  $_SESSION['userPhoneNo'] = $row['user_phone_no'];
   header("location:user_after_login_page.php");
   }
 }
