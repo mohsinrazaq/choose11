@@ -1,0 +1,49 @@
+body{
+    overflow-y: hidden;
+}
+
+.inner-wrapper{
+    display: flex;
+    overflow:hiden;
+}
+
+.left{
+height: 730px;
+width: 65%;    
+background-color:lightsalmon;
+}
+
+.inner-right{
+    height: 250px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.right{
+    height: 730px;
+    width: 35%;    
+    background-color:lightgoldenrodyellow;
+    margin-top: 90px;
+}
+
+.inner-left-top{
+    margin-top:90px; 
+    height: 100px;
+    width:100%;
+    background-color: rgb(83, 245, 151);
+}
+
+.inner-left-top nav{
+    float: left;
+}
+
+.innner-text{
+    padding: 30px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.upcoming-matches{
+    padding: 20px;
+    text-align: left;
+}

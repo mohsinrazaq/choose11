@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CHOOSE 11 - Homepage</title>
-    <link rel="stylesheet" href="css/navbar-styles.css">
+    <link rel="stylesheet" href="css/navbarstyles.css">
     <link rel="stylesheet" href="css/slider-style.css">
     <link rel="stylesheet" href="css/custom-styles.css">
     <link rel="stylesheet" href="css/upcoming-matches.css">
@@ -31,8 +31,8 @@
               <li><a href="#" class="current">Home</a></li>
               <li><a href="#matches">Upcoming Matches</a></li>
               <li><a href="#play">How To Play</a></li>
-              <li><a href="login-page.html">Login</a></li>
-              <li><a href="signup-page.html">Signup</a></li>
+              <li><a href="login-page.php">Login</a></li>
+              <li><a href="signup-page.php">Signup</a></li>
             </ul>
           </nav>
       </header>
@@ -43,11 +43,11 @@
         <div class="slider" id="slider" style="--img-prev:url(https://lh3.googleusercontent.com/aC9nyW5dhaYFmWD8fcf8DApjpH08eHEkbCHqmUPHRQ5T3jK-QyNKZYVMehmrvyPdEA_KxWvgZ3_kyOOYOAv99Ow3UoKSvEloleVKGSfLOwOyDV3Q6Dwi1G-NYoa9-t_ofmmskE6BYnVIOnIz2HWlMcijzIEwvKAL_R4z63DaLgG0z_OcGiSQHunwGAPXrBQUv42ZXuIMODq4zxDHczSxJ72b0-_udtdQK3JuT2X8nXCwFoF7GxmOpzXS0H5f50DuCbXoXcx-O7bgBMCXZdMpTxB27-wdXeLmxpYUySXgjSN2NAKmK16DmGLYvw5tMlrqwb8h4MJEEbXjP1pjPxXsahb7UZseEGyn80uLjATANJvusyJWCtzkkxYXPz-yI1rDvfEJKe2eyA-5AvFlzFBSwBMASn8f7mXinUrXMMREkJQjoi89NfZ91G7253OEVQOqcWxddiYtcHCO5v6Pl3QfV2SUTWXgggscDSY2ezjSPpYERNTXnIM_aCyWmIG7ybrfqOB0eVYBAgynyuPVbjd4KuZWZq2Dfu33HX1RuPKglbOuZGD1QbpJnruvUVkAmjDXI40ENN7X=w1600-h766);"> 
             <div class="slider__content" id="slider-content">
               <div class="slider__images">
-                <div class="slider__images-item slider__images-item--active" data-id="1"><img src="/images/1.jpg"/></div>
-                <div class="slider__images-item" data-id="2"><img src="/images/2.jpg"/></div>
-                <div class="slider__images-item" data-id="3"><img src="/images/3.jpg"/></div>
-                <div class="slider__images-item" data-id="4"><img src="/images/4.jpg"/></div>
-                <div class="slider__images-item" data-id="5"><img src="/images/5.jpg"/></div>
+                <div class="slider__images-item slider__images-item--active" data-id="1"><img src="images/1.jpg"/></div>
+                <div class="slider__images-item" data-id="2"><img src="images/2.jpg"/></div>
+                <div class="slider__images-item" data-id="3"><img src="images/3.jpg"/></div>
+                <div class="slider__images-item" data-id="4"><img src="images/4.jpg"/></div>
+                <div class="slider__images-item" data-id="5"><img src="images/5.jpg"/></div>
               </div>
               <div class="slider__text">
                 <div class="slider__text-item slider__text-item--active" data-id="1">
@@ -114,28 +114,28 @@
           <h3>Upcoming Matches</h3>
           <div class="card-parent">
               <div class="card">
-                <img class="card-img-top" src="/images/200x300card.gif" alt="Card image cap">
+                <img class="card-img-top" src="images/200x300card.gif" alt="Card image cap">
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>  
               </div>
 
               <div class="card">
-                <img class="card-img-top" src="/images/200x300card.gif" alt="Card image cap">
+                <img class="card-img-top" src="images/200x300card.gif" alt="Card image cap">
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>  
               </div>
 
               <div class="card">
-                  <img class="card-img-top" src="/images/200x300card.gif" alt="Card image cap">
+                  <img class="card-img-top" src="images/200x300card.gif" alt="Card image cap">
                   <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>  
               </div>
 
               <div class="card">
-                  <img class="card-img-top" src="/images/200x300card.gif" alt="Card image cap">
+                  <img class="card-img-top" src="images/200x300card.gif" alt="Card image cap">
                   <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>  
@@ -154,8 +154,8 @@
         <div class="video-div">
 
           <div class="video">
-            <video height="240" width="320" controls>
-            <source src="video/Ali Sethi - Chandni Raat (Official Video).mp4">
+            <video controls>
+            <source src="video/Demo.mp4">
             </video>
           </div>
 

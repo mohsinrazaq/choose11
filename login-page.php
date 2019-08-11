@@ -7,10 +7,39 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
   <link rel="stylesheet" href="css/login-style.css">
-
-  
 </head>
-
+<?php
+if(isset($_POST['submit'])){
+$userEmail = $_POST['email'];
+$userPassword = $_POST['password'];
+include("db.php");
+$SearchQuery = "SELECT * FROM users_data WHERE user_email ='$userEmail' AND user_password = '$userPassword'";
+$res1 = mysqli_query($con,$SearchQuery); 
+$row = mysqli_fetch_array($res1);
+if($row ['user_type'] == 'admin'){
+  $_SESSION['userId'] = $row['user_id'];
+  $_SESSION['username'] = $row['user_name'];
+  $_SESSION['Email'] = $row['user_email'];
+  $_SESSION['userPassword'] = $row['user_password'];
+  $_SESSION['userCnic'] =   $row['user_cnic'];
+  $_SESSION['userGender'] =   $row['user_gender'];
+  $_SESSION['userAddress'] =   $row['user_address'];
+  $_SESSION['userPhoneNo'] = $row['user_phone_no'];
+  header("location:admin_after_login_page.php");
+}
+else{
+  $_SESSION['userId'] = $row['user_id'];
+  $_SESSION['username'] = $row['user_name'];
+  $_SESSION['Email'] = $row['user_email'];
+  $_SESSION['userPassword'] = $row['user_password'];
+  $_SESSION['userCnic'] =   $row['user_cnic'];
+  $_SESSION['userGender'] =   $row['user_gender'];
+  $_SESSION['userAddress'] =   $row['user_address'];
+  $_SESSION['userPhoneNo'] = $row['user_phone_no'];
+  header("location:user_after_login_page.php");
+  }
+}
+?>
 <body>
 <div class='box'>
   <div class='box-form'>
@@ -20,18 +49,19 @@
     </div>
 
     <div class='box-login'>
+      <Form method="POST" name="login-form">
       <div class='fieldset-body' id='login_form'>
         <button onclick="openLoginInfo();" class='b b-form i i-more' title='Mais Informações'></button>
         
         <p class='field'>
-          <label for='user'>USERNAME</label>
-          <input type='text' id='user' name='user' title='Username' />
+          <label for='user'>Email ID</label>
+          <input type='text' id='user' name='email' title='Email ID' />
           <span id='valida' class='i i-warning'></span>
         </p>
 
       	<p class='field'>
           <label for='pass'>PASSWORD</label>
-          <input type='password' id='pass' name='pass' title='Password' />
+          <input type='password' id='pass' name='password' title='Password' />
           <span id='valida' class='i i-close'></span>
         </p>
 
@@ -39,9 +69,9 @@
           <input type='checkbox' value='TRUE' title='Keep me Signed in' /> Keep me Signed in
         </label>
 
-
-          <input type='submit' id='do_login' value='GET STARTED' title='Get Started' onClick="location.href='user-after-login-page.html'">
+          <input type='submit' name="submit" id='do_login' value='GET STARTED' title='Get Started' onClick="location.href='user-after-login-page.html'">
       </div>
+      </Form>
     </div>
   </div>
 
@@ -52,7 +82,7 @@
     <button onclick="" class='b-support' title='Contact Support'> Contact Support</button>
     <div class='line-wh'></div>
     <button onclick="" class='b-cta' title='Sign up now!'>
-      <a href="signup-page.html" style="color: white;"> CREATE ACCOUNT</a>
+      <a href="signup-page.php" style="color: white;"> CREATE ACCOUNT</a>
     </button>
   </div>
 </div>
